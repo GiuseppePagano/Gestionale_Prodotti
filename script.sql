@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS gestionale_prod;
+CREATE DATABASE gestionale_prod;
+USE gestionale_prod;
+
+CREATE TABLE amministratori (
+	utenteID INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    eml VARCHAR(255) NOT NULL,
+    pwd VARCHAR(255) NOT NULL
+);
+CREATE TABLE prodotti(
+	prodottoID INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(255) NOT NULL,
+    descr VARCHAR(500) NOT NULL,
+    link VARCHAR(255) NOT NULL ,
+    prezzo FLOAT NOT NULL,
+    percen INTEGER
+    
+);
